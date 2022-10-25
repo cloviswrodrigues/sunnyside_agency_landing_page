@@ -21,3 +21,23 @@ $color-white: hsl(0, 0%, 100%);
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 10px;
+    font-family: Barlow, sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
