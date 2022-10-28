@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 
     &--egg {
         width: 100%;
@@ -32,6 +33,7 @@
         height: 60rem;
         background: url(../images/desktop/image-graphic-design.jpg) no-repeat;
         background-size: cover;
+        justify-content: flex-end;
     }
 
     &--orange {
@@ -39,6 +41,7 @@
         height: 60rem;
         background: url(../images/desktop/image-photography.jpg) no-repeat;
         background-size: cover;
+        justify-content: flex-end;
     }
 }
 
@@ -81,7 +84,7 @@
 }
 
 .section__info {
-    width: 45%;
+    width: 43%;
     text-align: center;
 
     h3 {
@@ -89,6 +92,7 @@
         font-family: Fraunces, sans-serif;
         font-weight: 900;
         margin-bottom: 3rem;
+        text-transform: capitalize;
     }
 
     p {
