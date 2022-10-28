@@ -119,3 +119,55 @@
         }
     }
 }
+
+.testimonials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15rem 0;
+
+    h4 {            
+        font-size: 2rem;   
+        font-family: Fraunces, sans-serif;
+        font-weight: 900;
+        color: $color-dark-grayish-blue;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        margin-bottom: 8rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 5rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__profile {
+        width: 8rem;
+        border-radius: 50%;
+    }
+
+    &__description {
+        text-align: center;
+        margin: 4rem 0;
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    &__name {
+        font-size: 2rem;          
+        font-family: Fraunces, sans-serif;
+        font-weight: 900;
+    }
+
+    &__role {
+        margin-top: 1rem;
+       font-size: 1.6rem; 
+       color: $color-grayish-blue;
+    }
+}

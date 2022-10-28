@@ -177,4 +177,49 @@ li {
   color: hsl(212deg, 27%, 19%);
 }
 
+.testimonials {
+  width: 80%;
+  margin: 0 auto;
+  padding: 15rem 0;
+}
+.testimonials h4 {
+  font-size: 2rem;
+  font-family: Fraunces, sans-serif;
+  font-weight: 900;
+  color: hsl(232deg, 10%, 55%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 8rem;
+}
+.testimonials__wrapper {
+  display: flex;
+  gap: 5rem;
+}
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__profile {
+  width: 8rem;
+  border-radius: 50%;
+}
+.testimonials__description {
+  text-align: center;
+  margin: 4rem 0;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.testimonials__name {
+  font-size: 2rem;
+  font-family: Fraunces, sans-serif;
+  font-weight: 900;
+}
+.testimonials__role {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: hsl(210deg, 4%, 67%);
+}
+
 /*# sourceMappingURL=style.css.map */
