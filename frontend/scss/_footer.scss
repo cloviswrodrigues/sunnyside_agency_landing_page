@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    padding: 6rem;
+    background-color: lighten($color-dark-moderate-cyan, 25%);
+    position: relative;
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 4rem;
+
+        svg {
+            fill: $color-dark-desaturated-cyan;
+        }
+    }
+
+    &__nav {
+        font-size: 1.6rem;
+        color: $color-dark-desaturated-cyan;
+        margin-bottom: 8rem;
+
+        ul {
+            display: flex;
+            gap: 5rem;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    &__attribution {
+        position: absolute;
+        bottom: 1rem;
+        color: $color-dark-desaturated-cyan;
+    }
+}
