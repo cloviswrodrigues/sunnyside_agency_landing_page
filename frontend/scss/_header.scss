@@ -1,5 +1,5 @@
 .header {
-    padding-top: 3rem;
+    padding-top: 6rem;
     font-size: 1.6rem;
     color: $color-white;
 
@@ -35,13 +35,26 @@
             gap: 5rem;
             align-items: center;
 
+            li:hover {
+                text-decoration: underline;
+            }
+
             li:last-child {   
-                background-color: $color-white;
-                border-radius: 5rem;
-                font-family: Fraunces, sans-serif;
-                color: $color-very-dark-desaturated-blue;
-                text-transform: uppercase;
-                padding: 1.5rem 2.5rem;
+                text-decoration: none;
+
+                a {
+                    background-color: $color-white;
+                    border-radius: 5rem;
+                    font-family: Fraunces, sans-serif;
+                    color: $color-very-dark-desaturated-blue;
+                    text-transform: uppercase;
+                    padding: 2rem 3rem;                    
+    
+                    &:hover {
+                        background-color: $color-light-blue;
+                        color: $color-white;
+                    }
+                }                
             }
         }
     }

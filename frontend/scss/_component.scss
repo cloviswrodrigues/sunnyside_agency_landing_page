@@ -2,9 +2,7 @@
     margin-top: 52.9rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    
+    grid-template-rows: repeat(3, 1fr);    
 }
 
 .section__item {
@@ -62,23 +60,50 @@
         margin-bottom: 3rem;
     }
 
-    a {
-        font-size: 1.4rem;        
-        font-family: Fraunces, sans-serif;
-        font-weight: 900;
-        text-transform: uppercase;
+   
+}
 
+.section__link {
+    font-size: 1.4rem;        
+    font-family: Fraunces, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 29%;
+        height: 8px;
+        border-radius: 5px;
+        position: relative;
+        top: -6px;
+        left: -6px;
+        z-index: -1;
+    }
+}
+
+.link-yellow {
+
+    &::after {        
+        background-color: lighten($color-yellow, 40%);
+    }
+
+    &:hover {
         &::after {
-            content: '';
-            display: block;
-            background-color: lighten($color-yellow, 40%);
-            width: 29%;
-            height: 8px;
-            border-radius: 5px;
-            position: relative;
-            top: -6px;
-            left: -6px;
-            z-index: -1;
+            background-color: $color-yellow;
+        }
+    }
+}
+
+.link-red {
+
+    &::after { 
+        background-color: lighten($color-soft-red, 20%);
+    }
+
+    &:hover {
+        &::after {
+            background-color: $color-soft-red;
         }
     }
 }
