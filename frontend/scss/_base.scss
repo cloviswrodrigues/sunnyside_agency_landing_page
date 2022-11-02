@@ -16,6 +16,8 @@ $color-dark-grayish-blue: hsl(232, 10%, 55%);
 $color-grayish-blue: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
 
+$break-mobile: 800px;
+
 * {
     margin: 0;
     padding: 0;
@@ -28,9 +30,13 @@ html {
 }
 
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 144rem;
     margin: 0 auto;
+
+    @media screen and (max-width: $break-mobile) {
+        
+    }
 }
 
 a {

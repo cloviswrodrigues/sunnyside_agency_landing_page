@@ -6,6 +6,11 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);    
+
+    @media screen and (max-width: $break-mobile) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr); 
+    }
 }
 
 .section__item {
@@ -20,6 +25,7 @@ main {
         height: 60rem;
         background: url(../images/desktop/image-transform.jpg) no-repeat;
         background-size: cover;
+        order: 1;
     }
 
     &--cup {
@@ -167,6 +173,7 @@ main {
     &__wrapper {
         display: flex;
         gap: 5rem;
+        flex-wrap: wrap;
     }
 
     &__item {
