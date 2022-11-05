@@ -144,6 +144,11 @@ li {
 main {
   margin-top: 63.2rem;
 }
+@media screen and (max-width: 800px) {
+  main {
+    margin-top: 41.6rem;
+  }
+}
 
 .section__grid {
   display: grid;
@@ -167,28 +172,54 @@ main {
 .section__item--egg {
   width: 100%;
   height: 60rem;
-  background: url(../images/desktop/image-transform.jpg) no-repeat;
+  background: url(../images/desktop/image-transform.jpg) no-repeat center;
   background-size: cover;
 }
 .section__item--cup {
   width: 100%;
   height: 60rem;
-  background: url(../images/desktop/image-stand-out.jpg) no-repeat;
+  background: url(../images/desktop/image-stand-out.jpg) no-repeat center;
   background-size: cover;
 }
 .section__item--grunt {
   width: 100%;
   height: 60rem;
-  background: url(../images/desktop/image-graphic-design.jpg) no-repeat;
+  background: url(../images/desktop/image-graphic-design.jpg) no-repeat center;
   background-size: cover;
   justify-content: flex-end;
 }
 .section__item--orange {
   width: 100%;
   height: 60rem;
-  background: url(../images/desktop/image-photography.jpg) no-repeat;
+  background: url(../images/desktop/image-photography.jpg) no-repeat center;
   background-size: cover;
   justify-content: flex-end;
+}
+@media screen and (max-width: 800px) {
+  .section__item--egg {
+    order: 1;
+    height: 45rem;
+  }
+  .section__item--transform {
+    order: 2;
+    height: 45rem;
+  }
+  .section__item--cup {
+    order: 3;
+    height: 45rem;
+  }
+  .section__item--standout {
+    order: 4;
+    height: 45rem;
+  }
+  .section__item--grunt {
+    order: 5;
+    height: 45rem;
+  }
+  .section__item--orange {
+    order: 6;
+    height: 45rem;
+  }
 }
 
 .section__box {
@@ -206,17 +237,24 @@ main {
   line-height: 3rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 800px) {
+  .section__box {
+    width: 80%;
+    text-align: center;
+  }
+}
 
 .section__link {
   font-size: 1.4rem;
   font-family: Fraunces, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+  display: inline-block;
 }
 .section__link::after {
   content: "";
   display: block;
-  width: 29%;
+  width: 115%;
   height: 8px;
   border-radius: 5px;
   position: relative;
@@ -266,6 +304,14 @@ main {
 }
 .section__info--blue p {
   color: hsl(212deg, 27%, 19%);
+}
+@media screen and (max-width: 800px) {
+  .section__info {
+    width: 90%;
+  }
+  .section__info h3 {
+    font-size: 2.4rem;
+  }
 }
 
 .testimonials {
