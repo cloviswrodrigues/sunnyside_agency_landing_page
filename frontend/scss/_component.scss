@@ -25,7 +25,6 @@ main {
         height: 60rem;
         background: url(../images/desktop/image-transform.jpg) no-repeat;
         background-size: cover;
-        order: 1;
     }
 
     &--cup {
@@ -67,9 +66,7 @@ main {
         color: $color-very-dark-grayish-blue;
         line-height: 3rem;
         margin-bottom: 3rem;
-    }
-
-   
+    }   
 }
 
 .section__link {
@@ -173,7 +170,7 @@ main {
     &__wrapper {
         display: flex;
         gap: 5rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     &__item {
@@ -204,6 +201,13 @@ main {
         margin-top: 1rem;
        font-size: 1.6rem; 
        color: $color-grayish-blue;
+    }
+
+    @media screen and (max-width: $break-mobile) {    
+        
+        &__wrapper { 
+            flex-wrap: wrap;
+        }
     }
 }
 

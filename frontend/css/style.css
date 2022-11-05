@@ -169,7 +169,6 @@ main {
   height: 60rem;
   background: url(../images/desktop/image-transform.jpg) no-repeat;
   background-size: cover;
-  order: 1;
 }
 .section__item--cup {
   width: 100%;
@@ -287,7 +286,7 @@ main {
 .testimonials__wrapper {
   display: flex;
   gap: 5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .testimonials__item {
   display: flex;
@@ -313,6 +312,11 @@ main {
   margin-top: 1rem;
   font-size: 1.6rem;
   color: hsl(210deg, 4%, 67%);
+}
+@media screen and (max-width: 800px) {
+  .testimonials__wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 .gallery {
