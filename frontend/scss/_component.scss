@@ -232,10 +232,17 @@ main {
        color: $color-grayish-blue;
     }
 
-    @media screen and (max-width: $break-mobile) {    
+    @media screen and (max-width: $break-mobile) { 
+        width: 85%;
+        padding: 8rem 0;  
+
+        h4 {
+            font-size: 1.5rem;
+        }
         
         &__wrapper { 
             flex-wrap: wrap;
+            gap: 8rem;
         }
     }
 }
