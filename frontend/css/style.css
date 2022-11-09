@@ -158,7 +158,7 @@ main {
 @media screen and (max-width: 800px) {
   .section__grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 28rem 38rem 28rem 38rem 60rem 60rem;
   }
 }
 
@@ -198,27 +198,30 @@ main {
 @media screen and (max-width: 800px) {
   .section__item--egg {
     order: 1;
-    height: 45rem;
+    height: 100%;
   }
   .section__item--transform {
     order: 2;
-    height: 45rem;
+    height: 100%;
   }
   .section__item--cup {
     order: 3;
-    height: 45rem;
+    height: 100%;
   }
   .section__item--standout {
     order: 4;
-    height: 45rem;
+    height: 100%;
   }
   .section__item--grunt {
     order: 5;
-    height: 45rem;
+    height: 100%;
   }
   .section__item--orange {
     order: 6;
-    height: 45rem;
+    height: 100%;
+  }
+  .section__item--transform, .section__item--standout {
+    padding-bottom: 0;
   }
 }
 
@@ -239,8 +242,16 @@ main {
 }
 @media screen and (max-width: 800px) {
   .section__box {
-    width: 80%;
+    width: 82%;
     text-align: center;
+  }
+  .section__box h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .section__box p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }
 

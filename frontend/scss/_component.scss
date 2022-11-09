@@ -13,7 +13,7 @@ main {
 
     @media screen and (max-width: $break-mobile) {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr); 
+        grid-template-rows: 28rem 38rem 28rem 38rem 60rem 60rem; 
     }
 }
 
@@ -56,12 +56,18 @@ main {
 
     @media screen and (max-width: $break-mobile) {
         $grid-items: ("egg": 1, "transform": 2, "cup": 3, "standout": 4, "grunt": 5, "orange": 6);
+        $height-item: 40rem;
 
         @each $item, $order in $grid-items {
             &--#{$item} {
                 order: $order;
-                height: 45rem;
+                height: 100%;
             }
+        }
+
+        &--transform
+        ,&--standout {
+            padding-bottom: 0;
         }
     }
 }
@@ -84,8 +90,18 @@ main {
     }   
 
     @media screen and (max-width: $break-mobile) {
-        width: 80%;
-        text-align: center;        
+        width: 82%;
+        text-align: center;     
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
     }
 }
 
