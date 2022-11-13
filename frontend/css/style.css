@@ -177,26 +177,26 @@ main {
 }
 .section__item--egg {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background: url(../images/desktop/image-transform.jpg) no-repeat center;
   background-size: cover;
 }
 .section__item--cup {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background: url(../images/desktop/image-stand-out.jpg) no-repeat center;
   background-size: cover;
 }
 .section__item--grunt {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background: url(../images/desktop/image-graphic-design.jpg) no-repeat center;
   background-size: cover;
   justify-content: flex-end;
 }
 .section__item--orange {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   background: url(../images/desktop/image-photography.jpg) no-repeat center;
   background-size: cover;
   justify-content: flex-end;
